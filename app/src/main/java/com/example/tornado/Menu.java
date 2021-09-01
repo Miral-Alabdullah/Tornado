@@ -24,6 +24,7 @@ public class Menu extends AppCompatActivity {
 
         goToHomePage.setOnClickListener(view -> {
             Intent goToHomePageIntent = new Intent(Menu.this, MainActivity.class);
+            startActivity(goToHomePageIntent);
         });
     }
 }
