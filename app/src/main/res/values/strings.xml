@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tornado</string>
+    <string name="ackreman">Ackreman</string>
+    <string name="button">Button</string>
+    <string name="menu">Menu</string>
+    <string name="add_dish">Add Dish</string>
+    <string name="submit">Submit</string>
+    <string name="text">Fill the following form with the required inforimation</string>
+    <string name="dish_price">Dish Price</string>
+    <string name="ingredients_0">Ingredients</string>
+    <string name="dish_name">Dish Name</string>
+</resources>
