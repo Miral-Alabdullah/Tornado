@@ -9,4 +9,6 @@
     <string name="dish_price">Dish Price</string>
     <string name="ingredients_0">Ingredients</string>
     <string name="dish_name">Dish Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
