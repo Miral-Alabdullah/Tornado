@@ -14,7 +14,7 @@ import androidx.room.RoomDatabase;
 **********************************************************************************
  */
 
-@Database(entities = {Dish.class}, version = 1)
+@Database(entities = {Dish.class}, version = 1, exportSchema = false)
 public abstract class DishDatabase extends RoomDatabase {
     //Create an abstract method of type DishDao
     public abstract DishDao dishDao();

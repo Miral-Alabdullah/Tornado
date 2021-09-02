@@ -1,6 +1,7 @@
 package com.example.tornado;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,16 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.DishViewHolder
 
         public DishViewHolder(@NonNull View itemView) {
             super(itemView);
+            this.itemView = itemView;
+
+            //Add the onClickListener For each item
+            itemView.findViewById(R.id.layoutFragment).setOnClickListener(view -> {
+                Intent goToDetailPage = new Intent(view.getContext(), DishDetails.class);
+                goToDetailPage.putExtra("dishName", dish.Name);
+                goToDetailPage.putExtra("dishPrice", dish.Price);
+                goToDetailPage.putExtra("dishIngredients", dish.Ingredients);
+                view.getContext().startActivity(goToDetailPage);
+            });
         }
     }
 
@@ -44,7 +55,7 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.DishViewHolder
 
     @SuppressLint("SetTextI18n")
     @Override
-    public void onBindViewHolder(@NonNull @NotNull DishViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull DishViewHolder holder, int position) {
         holder.dish = dishes.get(position); //Each dish based on its position in the List
 
         TextView dishName = holder.itemView.findViewById(R.id.dishNameTextView);

@@ -28,9 +28,8 @@ public class Menu extends AppCompatActivity {
         DishDatabase dishDatabase = DishDatabase.getTheInstance(this.getApplicationContext());
         dishes = dishDatabase.dishDao().getAllDishes();
 
-
-        //To set the recyclerView we need to to set the adapter and for LayoutManager its optional,
-        // it indicates the way of displaying the items
+//        //To set the recyclerView we need to to set the adapter and for LayoutManager its optional,
+//        // it indicates the way of displaying the items
         recyclerView = findViewById(R.id.recyclerViewToListTheDishes);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new DishAdapter(dishes));

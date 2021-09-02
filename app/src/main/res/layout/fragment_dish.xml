@@ -7,33 +7,41 @@
     tools:context=".DishFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutFragment"
         android:layout_width="match_parent"
-        android:layout_height="184dp">
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD">
 
         <TextView
             android:id="@+id/dishPriceTextView"
-            android:layout_width="264dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="20dp"
-            android:gravity="center|start"
+            android:layout_width="181dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
             android:text="TextView"
+            android:textColor="#766161"
             android:textSize="34sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.495" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/dishNameTextView"
-            android:layout_width="264dp"
-            android:layout_height="65dp"
-            android:gravity="center|start"
+            android:layout_width="191dp"
+            android:layout_height="68dp"
+            android:gravity="center"
             android:text="TextView"
+            android:textColor="#766161"
             android:textSize="34sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/dishPriceTextView"
+            app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
